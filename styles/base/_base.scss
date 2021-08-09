@@ -106,3 +106,57 @@ input[type="text"] {
     background-color: #000;
   }
 }
+
+
+.red-circle {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 50% 100%;
+  background-color: $red-ribbon;
+  border: 16px solid $red-ribbon;
+}
+
+.white-circle {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 50% 100%;
+  background-color: $white;
+  border: 16px solid $white;
+}
+
+.circle {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: 50% 100%;
+  // background-color: $white;
+  // border: 16px solid $white;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.transition {
+  transition: ease-in-out all .3s;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, {
+  font-family: $font-opensans-regular;
+}
