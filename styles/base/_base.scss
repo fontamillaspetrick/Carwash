@@ -115,7 +115,7 @@ input[type="text"] {
   border-radius: 50%;
   object-position: 50% 100%;
   background-color: $red-ribbon;
-  border: 16px solid $red-ribbon;
+  border: 15px solid $red-ribbon;
 }
 
 .white-circle {
@@ -125,15 +125,18 @@ input[type="text"] {
   border-radius: 50%;
   object-position: 50% 100%;
   background-color: $white;
-  border: 16px solid $white;
+  border: 15px solid $white;
 }
 
 .circle {
-  display: block;
-  margin: auto;
   object-fit: cover;
   border-radius: 50%;
   object-position: 50% 100%;
+}
+
+.circle-centered {
+  display: block;
+  margin: auto;
 }
 
 .text-align-center {
@@ -149,12 +152,12 @@ input[type="text"] {
   align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p, {
-  font-family: $font-opensans-regular;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p, {
+//   font-family: $font-opensans-regular;
+// }

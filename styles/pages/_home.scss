@@ -5,11 +5,12 @@
 // -----------------------------------------------------------------------------
 
 .page-home {
+  padding-top: 92px;
   .hero {
     background-color: $red-ribbon;
     position: relative;
     z-index: 1;
-    padding: 150px 0;
+    padding: 75px 0;
 
     .row {
       align-items: center;
@@ -48,14 +49,10 @@
       }
 
       .col-relative {
-        position: relative;
         
         .image-wrapper {
-          position: absolute;
-          top: -100px;
-          right: 0;
-          bottom: initial;
-          left: 0;
+          position: relative;
+          margin-bottom: -200px;
           
           &::after {
             content: '';
@@ -110,8 +107,8 @@
         bottom: -60px;
         width: 70px;
         height: 70px;
-        background-color: #fff;
-        border: 14px solid #f01327;
+        background-color: $white;
+        border: 14px solid $red-ribbon;
         border-radius: 50%;
       }
 
@@ -195,20 +192,16 @@
         }
       }
 
-
-
-
-
     }
   }
 
   .cards {
     background-color: $shark;
-    padding: 120px;
+    padding: 120px 0;
     position: relative;
 
     svg {
-      fill: #f01327;
+      fill: $red-ribbon;
       position: absolute;
       top: 0;
       right: 0;
@@ -245,7 +238,7 @@
 
   .about {
     background-color: $red-ribbon;
-    padding: 50px;
+    padding: 50px 0;
 
     .content-wrapper {
       h2 {
@@ -268,19 +261,292 @@
 
   .services {
     background-color: $shark;
-    padding: 100px;
+    padding: 100px 0;
 
-    .main-col {
-
+    .main-col-left {
+      padding: 0 30px;
       .image-wrapper {
-        
+        position: relative;
+
         img {
-          width: 351px;
-          height: 351px;
+          position: relative;
+          z-index: 1;
+          width: 330px;
+          height: 330px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: initial;
+          right: 0;
+          left: initial;
+          bottom: -45px;
+          width: 330px;
+          height: 330px;
+          background-color: $red-ribbon;
+          border-radius: 50%;
+        }
+
+      }
+
+      .content-left-wrapper {
+        margin-top: 200px;
+        p {
+          color: $white;
+          font-size: 1rem;
+          line-height: 1.6;
+        }
+      }      
+
+    }  
+    
+    .main-col-right {
+      padding: 0 90px 30px 20px;
+
+      .content-right-wrapper {
+        h2 {
+          font-size: 3.75rem;
+          line-height: 1.1;
+          color: $white;
+          font-family: $font-oswald-semibold;
+        }
+
+        .freepik {
+          font-size: 1rem;
+          margin: 20px 0;
+          color: $white;
+          a {
+            color: $white;
+            border-bottom: 1px solid $red-ribbon;
+            text-decoration: none;
+  
+            &:hover {
+              color: $silver-mercury;
+            }
+          }
         }
       }
 
-    }    
+
+      .image-wrapper {
+        position: relative;
+        margin-top: 100px;
+        img {
+          width: 460px;
+          height: 460px;
+        }
+        
+        &::after {
+          content: '';
+          position: absolute;
+          top: initial;
+          right: 15px;
+          left: initial;
+          bottom: -30px;
+          width: 100px;
+          height: 100px;
+          background-color: $red-ribbon;
+          border-radius: 50%;  
+        }
+      }
+
+
+    }
   }
+
+  .premium {
+
+    .main-col-left {
+      .content-wrapper {
+        padding-right: 40px;
+        h5 {
+          font-size: 1.25rem;
+          line-height: 1.2;
+          text-transform: uppercase;
+        }
+  
+        h2 {
+          font-size: 3.75rem;
+          margin: 26px 0 0;
+          font-family: $font-oswald-semibold;
+  
+          span {
+            color: $red-ribbon;
+          }
+        }
+  
+        .description {
+          margin: 50px 0 0;
+          font-size: 16px;
+        }
+  
+        .freepik {
+          font-size: 1rem;
+          margin: 20px 0;
+          a {
+            color: $black;
+            border-bottom: 2px solid $red-ribbon;
+            text-decoration: none;
+  
+            &:hover {
+              color: $black;
+            }
+          }
+        }
+  
+      }
+    }
+
+    .main-col-right {
+      padding: 220px 0;
+
+      .image-wrapper {
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: -100px;
+          right: initial;
+          left: 0;
+          bottom: initial;
+          width: 220px;
+          height: 220px;
+          background-color: $white;
+          border: 40px solid #f01327;
+          border-radius: 50%;
+          z-index: 5;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: initial;
+          right: 170px;
+          left: initial;
+          bottom: -165px;
+          width: 100px;
+          height: 100px;
+          background-color: #f01327;
+          border-radius: 50%;
+          z-index: 8;
+        }
+
+        .premium1 {
+          position: relative;
+          z-index: 10;
+          width: 480px;
+          height: 480px;
+        }
+
+        .premium2 {
+          position: absolute;
+          top: initial;
+          right: initial;
+          bottom: -100px;
+          left: 0;
+          z-index: 15;
+          width: 250px;
+          height: 250px;
+          box-shadow: 5px 5px 18px 1px rgba(0, 0, 0, .40);
+        }
+
+      }
+    }
+
+  }
+
+  .contact {
+    padding: 100px 0;
+    background-color: $shark;
+
+    .row {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 500px;
+        height: 500px;
+        background-color: $red-ribbon;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+      }
+
+      .main-col-left {
+        background-color: $white;
+        .form-wrapper {
+          padding: 40px;
+  
+          .input-flex {
+            display: flex;
+            justify-content: space-between;
+  
+            input {
+              padding: 10px;
+              width: 47%;
+            }
+          }
+  
+          input {
+            font-size: 15px;
+            padding: 10px;
+            width: 100%;
+          }
+  
+          textarea {
+            padding: 10px;
+            width: 100%;
+            height: 100px;
+            resize: none;
+          }
+  
+          ::placeholder {
+            font-size: 15px;
+            color: $gray;
+          }
+  
+        }
+      }
+  
+      .main-col-right {
+        background-color: $shark;
+        box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, .40);
+  
+        .content-wrapper {
+          padding: 38px;
+  
+          h2 {
+            text-align: right;
+            color: $white;
+            font-size: 7.5rem;
+            font-family: $font-oswald-semibold;
+          }
+  
+          span {
+            display: block;
+            background: $white;
+            height: 6px;
+            width: 230px;
+            transform-origin: left center;
+          }
+  
+        }
+  
+  
+      }
+    }
+ 
+
+
+  }
+
+
 }
 
