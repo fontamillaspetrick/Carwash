@@ -5,7 +5,7 @@
 // -----------------------------------------------------------------------------
 
 body.show {
-
+  // pointer-events: none;
   overflow-y: hidden;
  
   .sidebar {
@@ -54,12 +54,12 @@ body.show {
     }
   }
 
-  .click {
+  // .click {
 
-    span::before {
-      content: '\f00d';
-    }
-  }
+  //   span::before {
+  //     content: '\f00d';
+  //   }
+  // }
 
 
 

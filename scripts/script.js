@@ -19,7 +19,17 @@ var subMenu = () => {
     $(this).toggleClass("click");
     $('body').toggleClass("show");
   });
+
+
+  $(document).keyup(function(event){
+    if (event.keyCode == 27){
+      $('body').removeClass("show");
+    }
+  });
+  
 }
+
+
 
 // initialize the functions
 headerScrolled();
