@@ -26,6 +26,11 @@ var subMenu = () => {
       $('body').removeClass("show");
     }
   });
+
+  $('.side-close').click(function(){
+    $(this).toggleClass("click");
+    $('body').removeClass("show");
+  });
   
 }
 

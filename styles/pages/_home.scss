@@ -1363,13 +1363,13 @@
     }
 
     .system {
-      padding-top: 220px;
-      padding-bottom: 70px;
+      padding-top: 44vw;
+      padding-bottom: 14vw;
       .row {
         .main-col-left {
           order: 2;
-          padding-top: 50px;
-          padding-bottom: 365px;
+          padding-top: 10vw;
+          padding-bottom: 71vw;
           .image-wrapper {
     
             &::before {
@@ -1426,7 +1426,7 @@
     }
 
     .cards {
-      padding: 140px 0;
+      padding: 27vw 0;
       svg {
         max-width: 450px;
       }
@@ -1458,7 +1458,7 @@
     }
 
     .services {
-      padding: 60px 0;
+      padding: 12vw 0;
       overflow: hidden;
       .main-col-left {
         padding: 0 30px;
@@ -1481,7 +1481,7 @@
         } 
         .content-left-wrapper {
           padding-left: 5px;
-          margin-top: 120px;
+          margin-top: 24vw;
 
           p {
             font-size: 14px;
@@ -1490,14 +1490,14 @@
       }  
       
       .main-col-right {
-        padding: 50px 30px 95px;
+        padding: 10vw 7vw 19vw;
         .content-right-wrapper {
           h2 {
             font-size: 36px;
           }
         }
         .image-wrapper {
-          margin-top: 80px;
+          margin-top: 16vw;
           img {
             width: 53vw;
             height: 53vw;
@@ -1514,7 +1514,7 @@
     }
 
     .premium {
-      padding: 80px 0;
+      padding: 16vw 0;
       .main-col-left {
         .content-wrapper {
           padding: 0 15px;
@@ -1530,8 +1530,8 @@
       }
 
       .main-col-right {
-        padding-top: 105px;
-        padding-bottom: 200px;
+        padding-top: 21vw;
+        padding-bottom: 40vw;
         .image-wrapper {
 
           &::before {
